@@ -2,3 +2,6 @@ h1{font-family: 'Ubuntu', sans-serif;}
 
 #under_title{font-family: 'Ubuntu', sans-serif; color: red;}
 
+a:visited {
+    text-decoration: none;
+}
