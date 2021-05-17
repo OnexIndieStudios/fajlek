@@ -21,15 +21,11 @@
 <p id="under_title">enostavno torentiranje, brez sranja.</p>
 
 <form>
-<input list="content-list" type="text" placeholder="fajlek iskalnik">
+<input list="content-list" type="text" placeholder="fajlek iskalnik" id="redirectSelect">
 <datalist id="content-list">
-<option value="big mama 1">
-<option value="big mama 2">
-<option value="big mama 3">
-<option value="big mama 4">
-<option value="big mama 5">
-<option value="big mama 6">
-<option value="big mama 7">
+<option value="big mama 1.html">test 1</option>
+<option value="pages/big mama 2.html">test 2</option>
+<option value="pages/big mama 3.html">test 3</option>
 </datalist>
 </form>
   
@@ -63,7 +59,7 @@ Fajlek je spletna stran za torentiranje, narejena z minimalizmom v mislih. Veči
 
 <h1>Iščemo prostovoljce!</h1>
 <p>Če želiš prispevati k fajleku nam napiši e-mail tukaj:</p>
-<a href="">example@john.cum</a>
+<a href=""><p></p></a>
 <p>Vse prostovoljce lepo prosimo, da dodajo vir datoteke in jo po želji tudi testirajo (zaradi virusov).</p>
 
 <br>
@@ -80,8 +76,28 @@ Fajlek je spletna stran za torentiranje, narejena z minimalizmom v mislih. Veči
 <br>
 <h1><strong>ETH:</strong></h1>
 <p><strong>0x304d8ae280e8d12b18744a27951b4bc5716cb073</strong></p>
-<img src="qr2.png" width="20%" height="40%">
+<img src="qr2.png">
+
+<br>
+<h1><strong>XMR:</strong></h1>
+<p><strong>42CirZ2ogB7LHXgEG7oVh8dDRnpy1orG1JrgeeDLGrqTJAUqnWJJoDgWt8kwL6cRoqP4Yb82BQ8FsSX2twufgKuvHFQr5X5</strong></p>
+<img src="qr3.png">
 
 </div>
 </body>
+<script>function redirect(goto){
+ 
+ window.location = goto;
+
+}
+
+
+var selectEl = document.getElementById('redirectSelect');
+
+selectEl.onselect = function(){
+    var goto = this.value;
+    redirect(goto);
+    
+};
+</script>
 </html>
